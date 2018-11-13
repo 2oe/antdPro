@@ -43,29 +43,43 @@ export default [
       },
       // myProject
       {
-        path:'/mypro',
+        path: '/mypro',
         name: 'mypro',
         icon: 'shop',
-        routes:[
+        routes: [
           {
-            path:'/mypro/shop-list',
-            name:'shoplist',
+            path: '/mypro/OrdinaryUser',
+            name: 'shoplist',
             component: './MyPro/ShopList',
-            icon: 'bars'
+            icon: 'bars',
           },
           {
-            path:'/mypro/user-list',
-            name:'userlist',
-            component: './MyPro/UserList',
-            icon: 'team'
-          },
-          {
-            path:'/mypro/order-manage',
-            name:'ordermanage',
+            path: '/mypro/order-manage',
+            name: 'ordermanage',
             component: './MyPro/OrderManage',
-            icon: 'solution'
-          }
-        ]
+            icon: 'solution',
+          },
+        ],
+      },
+      // UserManagement
+      {
+        path: '/UserManagement',
+        name: 'UserManagement',
+        icon: 'user',
+        routes: [
+          {
+            path: '/UserManagement/OrdinaryUser',
+            name: 'OrdinaryUser',
+            component: './UserManagement/OrdinaryUser',
+            icon: 'team',
+          },
+          {
+            path: '/UserManagement/staff',
+            name: 'staff',
+            component: './UserManagement/Staff',
+            icon: 'idcard',
+          },
+        ],
       },
       // forms
       {
